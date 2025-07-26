@@ -1,4 +1,4 @@
-# wasm-template
+# wasm-module
 
 A WebAssembly module built with Rust that provides fast mathematical operations for JavaScript applications.
 
@@ -13,7 +13,7 @@ npm install @riccardoscalco/wasm-module
 ### Basic Example
 
 ```javascript
-import { add } from 'wasm-template';
+import { add } from '@riccardoscalco/wasm-module';
 
 // Add two numbers
 const sum = add(5, 3); // Returns 8
