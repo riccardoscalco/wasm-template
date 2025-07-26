@@ -1,13 +1,13 @@
 [package]
-name = "wasm-template"
+name = "wasm-module"
 version = "0.1.0"
 authors = ["Riccardo Scalco <riccardo.scalco@gmail.com>"]
 edition = "2024"
 license = "MIT OR Apache-2.0"
-description = "A template for WebAssembly modules to publish on the npm registry"
-repository = "https://github.com/riccardoscalco/wasm-template"
+description = "High-performance library built with WebAssembly"
+repository = "https://github.com/riccardoscalco/wasm-module"
 readme = "README-npm.md"
-keywords = ["wasm", "webassembly", "template", "javascript"]
+keywords = ["wasm", "webassembly", "module", "javascript"]
 categories = ["wasm"]
 
 [lib]

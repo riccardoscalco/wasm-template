@@ -4,30 +4,21 @@ A template for kick starting a Rust and WebAssembly project using [wasm-pack][wa
 
 [wasm-pack-web-page]: https://rustwasm.github.io/docs/wasm-pack/introduction.html
 
-### Build
+### Usage
 
-```
-npm run build
-```
+* Write your Rust module in `src/`
+* Update the `[package]` section in the `Cargo.toml` file
+* Update the module scope in the build command (see `package.json`) and in `www/package.json`
+* Add tests to `tests/web.rs`, `www/main.js`, and `www/tests`
+* Build the project using `npm run build`
+* Test in headless browsers using `wasm-pack test --headless --firefox`
+* Run `npm install` in the www directory
+* Test in a web app using `npm run dev`
+* Run unit tests using `npm run test`
+* Update the `README-npm.md` file
+* Publish to NPM with `wasm-pack publish`
 
-### Test in Headless Browsers
-
-```
-npm run test
-```
-
-### Test in a Web app
-```
-npm run dev
-```
-
-### 🎁 Publish to NPM with `wasm-pack publish`
-
-```
-wasm-pack publish
-```
-
-## 🔋 Batteries Included
+## Batteries Included
 
 * [`wasm-bindgen`](https://github.com/rustwasm/wasm-bindgen) for communicating
   between WebAssembly and JavaScript.

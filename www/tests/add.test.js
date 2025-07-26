@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { add } from 'wasm-template';
+import { add } from '@riccardoscalco/wasm-module';
 
 describe('WASM add function', () => {
   it('should add two numbers correctly', () => {

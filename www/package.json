@@ -15,6 +15,6 @@
     "vitest": "^0.34.0"
   },
   "dependencies": {
-    "test-wasm": "file:../pkg"
+    "@riccardoscalco/wasm-module": "file:../pkg"
   }
 }

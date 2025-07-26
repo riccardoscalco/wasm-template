@@ -1,4 +1,4 @@
-import { add } from 'wasm-template';
+import { add } from '@riccardoscalco/wasm-module';
 
 async function run() {
     try {

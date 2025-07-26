@@ -6,7 +6,7 @@
     "www"
   ],
   "scripts": {
-    "build": "wasm-pack build --target bundler --out-dir pkg",
+    "build": "wasm-pack build --target bundler --out-dir pkg --scope riccardoscalco",
     "dev": "npm run build && cd www && npm start",
     "test": "npm run build && cd www && npm test",
     "clean": "rm -rf pkg"

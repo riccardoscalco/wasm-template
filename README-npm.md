@@ -5,7 +5,7 @@ A WebAssembly module built with Rust that provides fast mathematical operations 
 ## Installation
 
 ```bash
-npm install wasm-template
+npm install @riccardoscalco/wasm-module
 ```
 
 ## Usage
