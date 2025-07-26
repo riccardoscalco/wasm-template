@@ -1,0 +1,20 @@
+{
+  "name": "wasm-template-test-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "vite --host",
+    "build": "vite build",
+    "test": "vitest",
+    "test:watch": "vitest --watch"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0",
+    "vite-plugin-top-level-await": "^1.6.0",
+    "vite-plugin-wasm": "^3.5.0",
+    "vitest": "^0.34.0"
+  },
+  "dependencies": {
+    "test-wasm": "file:../pkg"
+  }
+}

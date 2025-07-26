@@ -1,0 +1,33 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          target: wasm32-unknown-unknown
+
+      - name: Install wasm-pack
+        run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+
+      - name: Build WASM
+        run: wasm-pack build --target bundler
+
+      - name: Run Rust tests
+        run: cargo test
+
+      - name: Run WASM tests
+        run: wasm-pack test --headless --firefox
+
+      - name: Install JS dependencies
+        run: cd www && npm install
+
+      - name: Run JS tests
+        run: cd www && npm test
