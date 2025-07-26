@@ -16,7 +16,7 @@ A template for kick starting a Rust and WebAssembly project using [wasm-pack][wa
 * Test in a web app using `npm run dev`
 * Run unit tests using `npm run test`
 * Update the `README-npm.md` file
-* Publish to NPM with `wasm-pack publish`
+* Publish to NPM with `cd pkg && npm publish --access=public`
 
 ## Batteries Included
 
